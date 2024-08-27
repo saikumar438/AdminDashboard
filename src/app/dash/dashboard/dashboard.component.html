@@ -1,0 +1,22 @@
+<h1>Display events </h1>
+
+<div *ngFor = 'let event of events'>
+    <h2>Event Id :- {{event.id}}</h2>
+    <h2>Event name :- {{event.eventName}}</h2>
+    <h4>Date Time :- {{event.dateTime}}</h4>
+    <h4>Description :- {{event.description}}</h4>
+    <h4>Event Category :- {{event.eventCategory}}</h4>
+    <h4>Event Status :- {{event.eventStatus}}</h4>
+</div>
+
+<div>
+    <h1>Click the button to display all the users </h1>
+    <button (click) = 'getAllUsers()'>get All users </button>
+    <div *ngFor = 'let user of users'>
+        <h2>UserName :- {{user.userName}}</h2>
+        <h4>First Name :- {{user.firstName}}</h4>
+        <h4>Last Name :- {{user.lastName}}</h4>
+        <h4>Email Verified :- {{user.emailVerified}}</h4>
+        <h4>TimeStamp :- {{user.timeStamp}}</h4>
+    </div>
+</div>
